@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Color Flipper | Aam</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        html,body {
+            height: 100%;
+            width: 100%;
+        }
+        main{
+            height: 100%;
+            width: 100%;
+            background-color: aquamarine;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+        }
+        h1{
+            font-size: 40px;
+            margin-bottom: 20px;
+            color: #000;
+        }
+        .color-circle{
+            height: 300px;
+            width: 300px;
+            border-radius: 50%;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+        #btn{
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 20px;
+            background-color: lightcoral;
+            color: white;
+        }
+        .color-name{
+            height: auto;
+            width: auto;
+            background-color: darkcyan;
+            padding: 10px;
+            color: #fff;
+            text-align: center;
+            font-size: 20px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Color Flipper </h1>
+        <div class="color-circle" id="circle"></div>
+        <p class="color-name">#fff</p>
+        <button id="btn">Click me</button>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
